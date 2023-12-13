@@ -45,14 +45,16 @@ function NavBar() {
           })}
         </div>
         <div className=" flex items-center gap-4">
-          <div className=" p-2 cursor-pointer rounded-full bg-primary hover:bg-primaryHover">
+          <div
+            className=" p-2 cursor-pointer rounded-full bg-primary hover:bg-primaryHover"
+            onClick={() =>
+              AppDispatch({
+                type: 'SwitchMode',
+                payload: AppStore.mode === 'dark' ? 'light' : 'dark',
+              })
+            }
+          >
             <Icon
-              onClick={() =>
-                AppDispatch({
-                  type: 'SwitchMode',
-                  payload: AppStore.mode === 'dark' ? 'light' : 'dark',
-                })
-              }
               icon={AppStore.mode == 'dark' ? dark : Light}
               fontSize={18}
               color="#fff"

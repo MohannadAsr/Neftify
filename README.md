@@ -1,7 +1,3 @@
-# React Start Project with TypeScript
-## Installed Packages and Features 
+# NFT Landing Page
+## Using [React , Tailwindcss]
 
-- i18next
-- react-router
-- tailwindcss
-- @iconify | mdi icons library 

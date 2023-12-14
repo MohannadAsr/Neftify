@@ -14,7 +14,7 @@ function Browse() {
         <h2 className=" text-center text-gray-400 py-5">
           Here are a few reasons why you should choose Neftify
         </h2>
-        <div className=" grid lg:grid-cols-4 grid-cols-2 gap-5 px-1 ">
+        <div className=" grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 px-1 ">
           {Array.from({ length: 6 }).map((item, index) => {
             return (
               <div
